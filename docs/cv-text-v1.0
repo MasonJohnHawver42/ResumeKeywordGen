@@ -1,0 +1,54 @@
+Mason John Hawver
+
+masonjohnhawver42.github.io
+mason.hawver@gmail.com
+630-853-6747
+
+Objective:
+
+Results-driven Computer Science major with a passion for robotics and a focus on Machine Learning, Dynamics, and Control. Seeking an internship in robotics research and development, where I can apply my comprehensive knowledge to contribute to cutting-edge projects, driving innovation and advancing autonomous robotics technologies.
+
+Education:
+
+University of Minnesota - Twin Citties, College of Science and Enginering
+B.S. in Computer Science, Minor in Mathematics, September 2022 - May 2025
+GPA 4.0
+
+Relevant Coursework: Linear ALgebra, Multivariable Calculus, Differential Equations, Statistics, Algorithims and Data Structures, Machine Learining, Robotics, and Computer Graphics
+
+Skills:
+
+Languages: (Fluent) C++ / C, Python, Java, (Proficent) OCaml, Javascript, Lua, and GLSL
+Libraries: Pytorch, OpenCV, ROS, OpenGL, ImGui, GraphQL, React, SQL
+Misc: GPU Programming, GIT, Unit Testing, and Bash
+
+Work Experience:
+
+(Future)
+Reaserch Assistant, Robtics: Perception and Manipulations Lab, September 2022 - Present
+TBD
+
+(Future)
+Teaching Assistant, University of Minnesota, September 2022 - Present
+Mentoring students to enhance their understanding of OCaml and functional programming principals.
+Contributing to the development of course materials to ensure effective learning.
+
+Projects:
+
+Game Engine, June 2023
+Developed a flexable and efficent Entity Componet System that minimizes cache misses, resulting in a 10X performance boost.
+Integrated Lua as a Scripting Laungage into C++ to enable runtime laoding of behaviours, rules, and scripts.
+Implimented a Graphical Interface for simulation editing, system control, and performance profiling.
+Utilized the GPU for parellization, achiving signifigigant performace gains over 100X.
+
+Automated Theorem Proving, May 2023
+Designed an Interpeted language that can define rules for exploring a graph of statments. Implemented a modified Depth First Serach to find a natural proofs with improved performance and shorter paths. 
+Developed Rule sets for calculus to simplify expressions and prove the derivative of real functions.
+
+Facial Recognition, December 2022
+Applied Pricipal Componet Analysis on a facial dataset, and implimented a linear softmax layer to achieve 85% test accuracy in facial recognition. Optimized the forward pass for efficent use with a Fast R-CNN network after facial reigons are found. 
+
+Extracriculars:
+
+Member, Robtics Club UMN, January 2023 - Present
+Collaberating on ROS platforms for sensor fusion, creating comprehensive enviorment maps for motion planning. Contributing to the development of control systems for a wheeled mobile robot.

@@ -1,0 +1,270 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mason Hawver} \\ \vspace{1pt}
+    \small (630) 853 6747 $|$ \href{mailto:x@x.com}{\underline{hawve005@umn.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/mason-jh}} $|$
+    \href{https://github.com/...}{\underline{masonhawver.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{University of Minnesota} - Twin Cities}{September 2022 -- May 2025}
+      {B.S. in Computer Science, Minor in Mathematics}{Minneapolis, MN}
+     \vspace{-1pt}
+     \begin{itemize}[leftmargin=0.01in, label={}]
+        \small{\item{
+         \textbf{Coursework}{: Machine Learning, Robotics, Data Structures, Differential Equations, Multi-variable Calculus, Statistics, Linear Algebra, and Computer Graphics} \\
+         \textbf{GPA}{: 4.0} \\
+        }}
+     \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: (Proficient) C++ / C, Python, GLSL, (Competent) Java, OCaml, Lua, JavaScript, (Beginner) Rust, and R } \\ 
+     \vspace{1pt}
+     \textbf{Libraries}{: ROS, Pytorch, Scikit-Learn, OpenCV, NumPy, Matplotlib, Node, Django, GraphQL, SQL, and Emscripten} \\
+     \vspace{1pt}
+     \textbf{Tools}{: Git, Docker, Make, CMake, Maven, gdb, and Bash} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Game Engine} $|$ \emph{C++, C, Lua, GLSL, and OpenGL }}{September 2023}
+            \resumeItemListStart
+                \resumeItem{Designed a stateless rendering API to efficiently offload gpu calls to a rendering thread, achieving 2X performance.}
+                \resumeItem{Utilized a Entity Component System to reduce cache misses, achieving 10X performance and enabling flexibility.}
+                \resumeItem{Crafted a Graphical Interface for performance profiling, debugging, and simulation editing.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Theorem Proving} $|$ \emph{OCaml, OCamllex, and OCamlyacc}}{May 2023}
+            \resumeItemListStart
+                \resumeItem{Devised an interpreted language for defining theorems and axioms, forming a searchable graph of statements. }
+                \resumeItem{Implemented a modified DFS algorithm to find natural proofs and simplifications with improved performance.}
+                \resumeItem{Developed theorem sets for calculus to solve the derivatives of real functions }
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Facial Recognition} $|$ \emph{Python, Numpy, and Scikit-Learn}}{January 2023}
+            \resumeItemListStart
+                \resumeItem{Applied Principal Component Analysis and a linear layer on a facial data, achieving an 85\% f1 test accuracy.}
+                \resumeItem{Optimized the forward pass for efficient use with a Fast R-CNN network after facial regions are found. }
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Object Detection} $|$ \emph{Python and Pytorch}}{August 2023}
+            \resumeItemListStart
+                \resumeItem{todo}
+                \resumeItem{todo}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Personal Website} $|$ \emph{HTML, CSS, JavaScript, Node, GraphQL, and SQL}}{September 2022}
+            \resumeItemListStart
+                \resumeItem{todo}
+                \resumeItem{todo}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+% -------------Leadership --------------------------
+\section{Leadership and Involvement}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{UMN Robotics Club} $|$ \emph{ROS, C++, Python}}{December 2022 - Present}
+            \resumeItemListStart
+                \resumeItem{todo}
+                \resumeItem{todo}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{UMN Social Coding} $|$ \emph{Javascript, HTML/CSS, React, Node, GraphQL, and SQL}}{September 2022 - Present}
+            \resumeItemListStart
+                \resumeItem{todo}
+                \resumeItem{todo}
+            \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {\textbf{Teaching Assistant} $|$ \emph{Functional Programming}} {September 2023 -- Present}
+          {University of Minnesota - Twin Cities}{Minneapolis, MN}
+          \resumeItemListStart
+            \resumeItem{todo}
+            \resumeItem{todo}
+            \resumeItem{todo}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Interests-----------
+\section{Interests}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{Graphics Programming, Hockey, Baseball, Pumping Iron, Keyboard Design, Pixel Art, Soldering, and Game Design}}
+    \end{itemize}
+
+    % \resumeSubheading
+    %   {Undergraduate Research Assistant}{June 2020 -- Present}
+    %   {Texas A\&M University}{College Station, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+    %     \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+    %     \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+    %   \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+    % \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+

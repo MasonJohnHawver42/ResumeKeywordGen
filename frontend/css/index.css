@@ -1,0 +1,23 @@
+.main
+{
+  width: 75%;
+  min-width: 52em;
+  max-width: 75em;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.text-input-field 
+{
+  width: 100%;
+  height: 40em;
+}
+
+.bar 
+{
+  height: 1px;
+  border: 1px;
+  background: #ffffff;
+  margin-top: .1em;
+  margin-bottom: .5em;
+}
